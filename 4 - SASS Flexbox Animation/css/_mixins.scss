@@ -1,0 +1,4 @@
+@mixin set-font($size, $color:darkblue ) {
+    color: $color;
+    font-size: $size;
+  }

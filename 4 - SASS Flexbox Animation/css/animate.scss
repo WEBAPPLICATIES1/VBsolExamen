@@ -1,0 +1,58 @@
+@import 'mixins';
+@import 'variables';
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: $achtergondkleur;
+  padding: 15px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      padding: 5px;
+    }
+
+    li:first-child {
+      // tweede en derde link naar rechts duwen
+      margin-right: auto;
+    }
+
+    li a {
+      padding: 15px;
+      background-color: darkblue;
+      color: white;
+      transition-property: background-color, border-radius;
+      transition-duration: 1s;
+      border-radius: 6px;
+      // Ook bij hover een geneste regel
+      &:hover {
+        background-color: #ff7b29;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+main {
+  h1 {
+    @include set-font(3em);
+  }
+
+  h2 {
+    @include set-font(2em, lightskyblue);
+  }
+  padding: 15px;
+}
+
+footer {
+  background-color: $achtergondkleur;
+  padding: 10px;
+  text-align: center;
+  color: darkblue;
+}

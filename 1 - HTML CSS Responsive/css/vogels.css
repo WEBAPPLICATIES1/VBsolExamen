@@ -1,0 +1,73 @@
+/*Algemene opmaak en layout voor mobile (<768px) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #999;
+  font-family: Arial;
+}
+
+header,
+h1,
+section,
+footer {
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #666;
+}
+
+header,
+section, footer {
+  width: 251px;
+  margin: auto;
+}
+
+h1 {
+  padding: 10px;
+  line-height: 2;
+  font-size: 1.3em;
+}
+
+section > article {
+  width: 245px;
+  height: 285px;
+  padding:15px;
+  background-color: #aaa;
+  color: #fff;
+  border: 1px solid #000;
+  margin: 3px 3px;
+}
+
+section > article > img {
+  margin: 15px auto;
+  display:block;
+}
+
+article > p:first-child {
+  font-weight: bold;
+}
+
+/*Opmaak en layout voor Medium devices en Large device (>=768px) */
+
+@media screen and (min-width: 768px) {
+  article {
+    float: left;
+  }
+  header,  section, footer {
+    width: 753px;
+  }
+  footer {
+    clear: both;
+  }
+}
+

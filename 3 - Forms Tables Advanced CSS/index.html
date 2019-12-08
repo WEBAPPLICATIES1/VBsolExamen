@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vraag 3</title>
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <h1>Kies de laptop die je wil!</h1>
+  <h2>jouw keuze:</h2>
+  <h3>HP 15-db0188nb AMD Ryzen 8GB RAM 1TB HDD laptop - Grijs, Zilver</h3>
+  <table>
+    <tr>
+      <th colspan="2">Geheugen</th>
+    </tr>
+    <tr>
+      <td>Kloksnelheid geheugen</td>
+      <td>2400 MHz</td>
+    </tr>
+    <tr>
+      <td>Maximum intern geheugen</td>
+      <td>16 GB</td>
+    </tr>
+    <tr>
+      <td>Intern geheugen</td>
+      <td>8 GB</td>
+    </tr>
+    <tr>
+      <th colspan="2">Audio</th>
+    </tr>
+    <tr>
+      <td>Ingebouwde microfoon</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <th colspan="2">Geheugen</th>
+    </tr>
+    <tr>
+      <td>HD type</td>
+      <td>Full HD</td>
+    </tr>
+    <tr>
+      <td>Beeldoppervlakte</td>
+      <td>Mat</td>
+    </tr>
+    <tr>
+      <td>Resolutie</td>
+      <td>1920 x 1080 pixels</td>
+    </tr>
+  </table>
+
+  <h2>Bestel</h2>
+  <p>Vul deze gegevens in om de bestelling te vervolledigen.</p>
+  <form action="/bestellen.php">
+    <p>
+      <label for="voornaam">Voornaam</label><input type="text" name="voornaam" id="voornaam" />
+    </p>
+    <p>
+      <label for="familienaam">Familienaam</label><input type="text" name="familienaam" id="familienaam" />
+    </p>
+    <p>
+      <label for="e-mailadres">E-mailadres (*)</label><input type="email" name="e-mailadres" id="e-mailadres"
+        required />
+    </p>
+    <p>Betaalwijze (*)</p>
+    <p>
+      <input type="radio" name="betaalwijze" value="BC" id="bc" />
+      <label for="bc">Bancontact</label>
+      <input type="radio" name="betaalwijze" value="visa" id="visa" checked />
+      <label for="visa">VISA</label>
+      <input type="radio" name="betaalwijze" value="paypal" id="paypal" />
+      <label for="paypal">PayPal</label>
+    </p>
+
+    <p><input type="submit" value="Bestellen en betalen" /></p>
+  </form>
+</body>
+
+</html>

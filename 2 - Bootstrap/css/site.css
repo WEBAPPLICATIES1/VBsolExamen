@@ -1,0 +1,24 @@
+.intro{
+    margin: 1em 0em;
+    height: 18em;
+    background: url(../images/prof_bg.png);
+    color:white;
+}
+
+.aanbod{
+    padding:1em;
+    background-color:#1DC586;
+}
+.aanbod .card{
+    margin-top:1em;
+}
+footer{
+    margin-top:1em;
+    background-color: #293045;
+    color:white;
+    padding : 1em;
+}
+
+header img {
+    height:50px;
+}

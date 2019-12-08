@@ -1,0 +1,60 @@
+/* 1ste bullet */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+/* 2de bullet */
+h1 {
+  color: lightskyblue;
+  margin-left: 0;
+}
+
+table,
+p {
+  margin-left: 40px;
+}
+
+/*  3de bullet */
+table {
+  width: 500px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+/* 4de bullet */
+td,
+th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* 5de bullet */
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+th {
+  background-color: lightskyblue;
+}
+
+/* Formulier */
+/* 3de bullet */
+input {
+  border: 1px solid lightskyblue;
+}
+
+input[required] {
+  border: 1px solid orange;
+}
+/* 4de bullet */
+label {
+  font-style: italic;
+  width: 150px;
+  display: inline-block;
+}
+/* 5de bullet */
+input[type='submit'] {
+  border: 2px solid black;
+  padding: 10px 20px;
+}
